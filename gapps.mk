@@ -12,8 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-#inherit common gapps
-$(call inherit-product, vendor/gapps/common-blobs.mk)
+#gapps blobs
+$(call inherit-product, vendor/gapps/gapps-blobs.mk)
 
 # /app
 PRODUCT_PACKAGES += \
@@ -23,11 +23,16 @@ PRODUCT_PACKAGES += \
     GoogleCamera \
     GoogleContactsSyncAdapter \
     GoogleTTS \
-    GoogleVrCore \
     Hangouts \
+    PlusOne \
+    talkback \
+    YouTube \
+    GoogleVrCore \
     Photos \
     PrebuiltDeskClockGoogle \
-    talkback
+    Ornament \
+    WallpaperPickerGooglePrebuilt
+
 
 # messenger skip on tablets
 ifeq ($(filter dragon,$(TARGET_PRODUCT)),)
@@ -37,12 +42,14 @@ endif
 
 # /framework
 PRODUCT_PACKAGES += \
-    com.google.android.camera.experimental2016 \
+    com.google.android.camera.experimental2017 \
+    com.google.android.dialer.support \
     com.google.android.maps \
     com.google.android.media.effects
 
 # /priv-app
 PRODUCT_PACKAGES += \
+    AmbientSensePrebuilt \
     AndroidPlatformServices \
     CarrierSetup \
     ConfigUpdater \
@@ -50,20 +57,29 @@ PRODUCT_PACKAGES += \
     GmsCoreSetupPrebuilt \
     GoogleBackupTransport \
     GoogleFeedback \
+    GoogleLoginService \
     GoogleOneTimeInitializer \
     GooglePartnerSetup \
     GoogleServicesFramework \
     Phonesky \
-    PrebuiltGmsCore \
-    DynamiteLoader.apk \
+    PixelLauncher \
+    PrebuiltGmsCorePix \
     DynamiteModulesA \
     DynamiteModulesB \
     DynamiteModulesC \
     DynamiteModulesD \
+    DynamiteLoader \
     GoogleCertificates \
     SetupWizard \
     Velvet
 
 # /symlinks
 PRODUCT_PACKAGES += \
-    libfacenet.so
+    libfacenet.so \
+    libgdx.so \
+    libwallpapers-breel-jni.so \
+    libjpeg.so
+
+# wallpaper location prop
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.wallpapers_loc_request_suw=true

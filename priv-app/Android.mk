@@ -15,6 +15,16 @@
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := AmbientSensePrebuilt
+LOCAL_MODULE_TAGS := optional
+LOCAL_SRC_FILES := AmbientSensePrebuilt/AmbientSensePrebuilt.apk
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_CLASS := APPS
+LOCAL_PRIVILEGED_MODULE := true
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := AndroidPlatformServices
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := AndroidPlatformServices/AndroidPlatformServices.apk
@@ -107,6 +117,16 @@ LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := GoogleLoginService
+LOCAL_MODULE_TAGS := optional
+LOCAL_SRC_FILES := GoogleLoginService/GoogleLoginService.apk
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_CLASS := APPS
+LOCAL_PRIVILEGED_MODULE := true
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := GoogleOneTimeInitializer
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := GoogleOneTimeInitializer/GoogleOneTimeInitializer.apk
@@ -137,16 +157,6 @@ LOCAL_PRIVILEGED_MODULE := true
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 include $(BUILD_PREBUILT)
 
-include $(CLEAR_VARS)
-LOCAL_MODULE := NexusLauncherPrebuilt
-LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := NexusLauncherPrebuilt/NexusLauncherPrebuilt.apk
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_MODULE_CLASS := APPS
-LOCAL_OVERRIDES_PACKAGES := Launcher3
-LOCAL_PRIVILEGED_MODULE := true
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := Phonesky
@@ -159,9 +169,9 @@ LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := PixelCLauncherPrebuilt
+LOCAL_MODULE := PixelLauncher
 LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := PixelCLauncherPrebuilt/PixelCLauncherPrebuilt.apk
+LOCAL_SRC_FILES := PixelLauncher/PixelLauncher.apk
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_CLASS := APPS
 LOCAL_OVERRIDES_PACKAGES := Launcher3
@@ -170,9 +180,9 @@ LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := PrebuiltGmsCore
+LOCAL_MODULE := PrebuiltGmsCorePix
 LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := PrebuiltGmsCore/PrebuiltGmsCore.apk
+LOCAL_SRC_FILES := PrebuiltGmsCorePix/PrebuiltGmsCorePix.apk
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
@@ -180,68 +190,68 @@ LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := DynamiteLoader.apk
-LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := PrebuiltGmsCore/app_chimera/m/DynamiteLoader.apk
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_MODULE_CLASS := m
-LOCAL_PRIVILEGED_MODULE := true
-LOCAL_MODULE_PATH := $(TARGET_OUT)/priv-app/PrebuiltGmsCore/app_chimera/m/
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := DynamiteModulesA
 LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := PrebuiltGmsCore/app_chimera/m/DynamiteModulesA.apk
+LOCAL_SRC_FILES := PrebuiltGmsCorePix/app_chimera/m/DynamiteModulesA.apk
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_CLASS := m
 LOCAL_PRIVILEGED_MODULE := true
-LOCAL_MODULE_PATH := $(TARGET_OUT)/priv-app/PrebuiltGmsCore/app_chimera/m/
+LOCAL_MODULE_PATH := $(TARGET_OUT)/priv-app/PrebuiltGmsCorePix/app_chimera/m/
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := DynamiteModulesB
 LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := PrebuiltGmsCore/app_chimera/m/DynamiteModulesB.apk
+LOCAL_SRC_FILES := PrebuiltGmsCorePix/app_chimera/m/DynamiteModulesB.apk
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_CLASS := m
 LOCAL_PRIVILEGED_MODULE := true
-LOCAL_MODULE_PATH := $(TARGET_OUT)/priv-app/PrebuiltGmsCore/app_chimera/m/
+LOCAL_MODULE_PATH := $(TARGET_OUT)/priv-app/PrebuiltGmsCorePix/app_chimera/m/
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := DynamiteModulesC
 LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := PrebuiltGmsCore/app_chimera/m/DynamiteModulesC.apk
+LOCAL_SRC_FILES := PrebuiltGmsCorePix/app_chimera/m/DynamiteModulesC.apk
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_CLASS := m
 LOCAL_PRIVILEGED_MODULE := true
-LOCAL_MODULE_PATH := $(TARGET_OUT)/priv-app/PrebuiltGmsCore/app_chimera/m/
+LOCAL_MODULE_PATH := $(TARGET_OUT)/priv-app/PrebuiltGmsCorePix/app_chimera/m/
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := DynamiteModulesD
 LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := PrebuiltGmsCore/app_chimera/m/DynamiteModulesD.apk
+LOCAL_SRC_FILES := PrebuiltGmsCorePix/app_chimera/m/DynamiteModulesD.apk
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_CLASS := m
 LOCAL_PRIVILEGED_MODULE := true
-LOCAL_MODULE_PATH := $(TARGET_OUT)/priv-app/PrebuiltGmsCore/app_chimera/m/
+LOCAL_MODULE_PATH := $(TARGET_OUT)/priv-app/PrebuiltGmsCorePix/app_chimera/m/
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := GoogleCertificates
 LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := PrebuiltGmsCore/app_chimera/m/GoogleCertificates.apk
+LOCAL_SRC_FILES := PrebuiltGmsCorePix/app_chimera/m/GoogleCertificates.apk
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_CLASS := m
 LOCAL_PRIVILEGED_MODULE := true
-LOCAL_MODULE_PATH := $(TARGET_OUT)/priv-app/PrebuiltGmsCore/app_chimera/m/
+LOCAL_MODULE_PATH := $(TARGET_OUT)/priv-app/PrebuiltGmsCorePix/app_chimera/m/
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := DynamiteLoader
+LOCAL_MODULE_TAGS := optional
+LOCAL_SRC_FILES := PrebuiltGmsCorePix/app_chimera/m/DynamiteLoader.apk
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_CLASS := m
+LOCAL_PRIVILEGED_MODULE := true
+LOCAL_MODULE_PATH := $(TARGET_OUT)/priv-app/PrebuiltGmsCorePix/app_chimera/m/
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 include $(BUILD_PREBUILT)
 
@@ -275,3 +285,17 @@ LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 include $(BUILD_PREBUILT)
+
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := Phonesky.apk.prof
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := FAKE
+LOCAL_SRC_FILES := Phonesky/Phonesky.apk.prof
+include $(BUILD_SYSTEM)/base_rules.mk
+$(LOCAL_BUILT_MODULE): TARGET := $(LOCAL_SRC_FILES)
+$(LOCAL_BUILT_MODULE): SYMLINK := $(TARGET_OUT)/priv-app/Phonesky/$(LOCAL_MODULE)
+$(LOCAL_BUILT_MODULE):
+	$(hide) echo "Copy: $(TARGET) -> $(SYMLINK)"
+	$(hide) cp $(TARGET) $(SYMLINK)
+
