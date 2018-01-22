@@ -18,15 +18,11 @@ $(call inherit-product, vendor/gapps/gapps-blobs.mk)
 # /app
 PRODUCT_PACKAGES += \
     CalendarGooglePrebuilt \
-    Chrome \
     FaceLock \
     GoogleCamera \
     GoogleContactsSyncAdapter \
     GoogleTTS \
-    Hangouts \
-    PlusOne \
     talkback \
-    YouTube \
     GoogleVrCore \
     Photos \
     PrebuiltDeskClockGoogle \
