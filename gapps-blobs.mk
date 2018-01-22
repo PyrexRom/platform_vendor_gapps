@@ -13,6 +13,10 @@
 # limitations under the License.
 
 PRODUCT_COPY_FILES += \
+    vendor/gapps/etc/init/bufferhubd.rc:system/etc/init/bufferhubd.rc \
+    vendor/gapps/etc/init/performanced.rc:system/etc/init/performanced.rc \
+    vendor/gapps/etc/init/vr_hwc.rc:system/etc/init/vr_hwc.rc \
+    vendor/gapps/etc/init/virtual_touchpad.rc:system/etc/init/virtual_touchpad.rc \
     vendor/gapps/etc/permissions/com.google.android.camera.experimental2017.xml:system/etc/permissions/com.google.android.camera.experimental2017.xml \
     vendor/gapps/etc/permissions/com.google.vr.platform.xml:system/etc/permissions/com.google.vr.platform.xml \
     vendor/gapps/etc/permissions/com.google.android.dialer.support.xml:system/etc/permissions/com.google.android.dialer.support.xml \
@@ -25,13 +29,23 @@ PRODUCT_COPY_FILES += \
     vendor/gapps/etc/sysconfig/google_vr_build.xml:system/etc/sysconfig/google_vr_build.xml \
     vendor/gapps/etc/sysconfig/nexus.xml:system/etc/sysconfig/nexus.xml \
     vendor/gapps/etc/sysconfig/whitelist_com.android.omadm.service.xml:system/etc/sysconfig/whitelist_com.android.omadm.service.xml \
+    vendor/gapps/lib/libdmjavaplugin.so:system/lib/libdmjavaplugin.so \
+    vendor/gapps/lib/libprotobuf-cpp-full.so:system/lib/libprotobuf-cpp-full.so \
+    vendor/gapps/lib/libdvr.so:system/lib/libdvr.so \
+    vendor/gapps/lib/libeaselcomm.so:system/lib/libeaselcomm.so \
+    vendor/gapps/lib/libdmengine.so:system/lib/libdmengine.so \
+    vendor/gapps/lib/libdvr_loader.so:system/lib/libdvr_loader.so \
     vendor/gapps/lib/libfilterpack_facedetect.so:system/lib/libfilterpack_facedetect.so \
     vendor/gapps/lib/libfrsdk.so:system/lib/libfrsdk.so \
-    vendor/gapps/lib64/libfacenet.so:system/lib64/libfacenet.so \
-    vendor/gapps/lib64/libfrsdk.so:system/lib64/libfrsdk.so \
-    vendor/gapps/lib64/libfilterpack_facedetect.so:system/lib64/libfilterpack_facedetect.so \
     vendor/gapps/lib64/libgdx.so:system/lib64/libgdx.so \
     vendor/gapps/lib64/libwallpapers-breel-jni.so:system/lib64/libwallpapers-breel-jni.so \
+    vendor/gapps/lib64/libvr_hwc-hal.so:system/lib64/libvr_hwc-hal.so \
+    vendor/gapps/lib64/libfacenet.so:system/lib64/libfacenet.so \
+    vendor/gapps/lib64/libfilterpack_facedetect.so:system/lib64/libfilterpack_facedetect.so \
+    vendor/gapps/lib64/libdvr.so:system/lib64/libdvr.so \
+    vendor/gapps/lib64/libeaselcomm.so:system/lib64/libeaselcomm.so \
+    vendor/gapps/lib64/libfrsdk.so:system/lib64/libfrsdk.so \
+    vendor/gapps/lib64/libdvr_loader.so:system/lib64/libdvr_loader.so \
     vendor/gapps/priv-app/Velvet/lib/arm64/libbrotli.so:system/priv-app/Velvet/lib/arm64/libbrotli.so \
     vendor/gapps/priv-app/Velvet/lib/arm64/libccl.so:system/priv-app/Velvet/lib/arm64/libccl.so \
     vendor/gapps/priv-app/Velvet/lib/arm64/libcronet.59.0.3071.25.so:system/priv-app/Velvet/lib/arm64/libcronet.59.0.3071.25.so \
