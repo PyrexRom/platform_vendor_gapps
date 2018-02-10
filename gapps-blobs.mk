@@ -46,15 +46,19 @@ PRODUCT_COPY_FILES += \
     vendor/gapps/lib64/libeaselcomm.so:system/lib64/libeaselcomm.so \
     vendor/gapps/lib64/libfrsdk.so:system/lib64/libfrsdk.so \
     vendor/gapps/lib64/libdvr_loader.so:system/lib64/libdvr_loader.so \
-    vendor/gapps/priv-app/Velvet/lib/arm64/libbrotli.so:system/priv-app/Velvet/lib/arm64/libbrotli.so \
+    vendor/gapps/app/CalculatorGooglePrebuilt/CalculatorGooglePrebuilt.apk.prof:system/app/CalculatorGooglePrebuilt/CalculatorGooglePrebuilt.apk.prof \
+    vendor/gapps/app/PrebuiltDeskClockGoogle/PrebuiltDeskClockGoogle.apk.prof:system/app/PrebuiltDeskClockGoogle/PrebuiltDeskClockGoogle.apk.prof \
+    vendor/gapps/app/GoogleCamera/GoogleCamera.apk.prof:system/app/GoogleCamera/GoogleCamera.apk.prof \
+    vendor/gapps/priv-app/GoogleContacts/GoogleContacts.apk.prof:system/priv-app/GoogleContacts/GoogleContacts.apk.prof \
+    vendor/gapps/priv-app/GoogleDialer/GoogleDialer.apk.prof:system/priv-app/GoogleDialer/GoogleDialer.apk.prof \
     vendor/gapps/priv-app/Velvet/lib/arm64/libccl.so:system/priv-app/Velvet/lib/arm64/libccl.so \
-    vendor/gapps/priv-app/Velvet/lib/arm64/libcronet.59.0.3071.25.so:system/priv-app/Velvet/lib/arm64/libcronet.59.0.3071.25.so \
+    vendor/gapps/priv-app/Velvet/lib/arm64/libcronet.61.0.3160.0.so:system/priv-app/Velvet/lib/arm64/libcronet.61.0.3160.0.so \
     vendor/gapps/priv-app/Velvet/lib/arm64/libframesequence.so:system/priv-app/Velvet/lib/arm64/libframesequence.so \
     vendor/gapps/priv-app/Velvet/lib/arm64/libgoogle_speech_jni.so:system/priv-app/Velvet/lib/arm64/libgoogle_speech_jni.so \
     vendor/gapps/priv-app/Velvet/lib/arm64/libgoogle_speech_micro_jni.so:system/priv-app/Velvet/lib/arm64/libgoogle_speech_micro_jni.so \
     vendor/gapps/priv-app/Velvet/lib/arm64/libnativecrashreporter.so:system/priv-app/Velvet/lib/arm64/libnativecrashreporter.so \
     vendor/gapps/priv-app/Velvet/lib/arm64/liboffline_actions_jni.so:system/priv-app/Velvet/lib/arm64/liboffline_actions_jni.so \
-    vendor/gapps/priv-app/Velvet/lib/arm64/libthird_party_brotli_dec_jni.so:system/priv-app/Velvet/lib/arm64/libthird_party_brotli_dec_jni.so \
+    vendor/gapps/priv-app/Velvet/lib/arm64/libhere_allpurpose.so:system/priv-app/Velvet/lib/arm64/libhere_allpurpose.so \
     vendor/gapps/usr/srec/en-US/am_phonemes.syms:system/usr/srec/en-US/am_phonemes.syms \
     vendor/gapps/usr/srec/en-US/app_bias.fst:system/usr/srec/en-US/app_bias.fst \
     vendor/gapps/usr/srec/en-US/APP_NAME.fst:system/usr/srec/en-US/APP_NAME.fst \
