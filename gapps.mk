@@ -30,7 +30,7 @@ PRODUCT_PACKAGES += \
     PrebuiltDeskClockGoogle \
     Ornament \
     WallpaperPickerGooglePrebuilt \
-    Turbo 
+    Turbo
 
 # messenger skip on tablets
 ifeq ($(filter dragon,$(TARGET_PRODUCT)),)
