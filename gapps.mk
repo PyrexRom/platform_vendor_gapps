@@ -100,7 +100,7 @@ PRODUCT_PACKAGES += \
     com.google.android.dialer.support
 
 #telephony permissions
-PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES_OVERRIDES += \
     vendor/gapps/etc/permissions/com.google.android.dialer.support.xml:system/etc/permissions/com.google.android.dialer.support.xml \
     vendor/gapps/etc/sysconfig/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml
 endif

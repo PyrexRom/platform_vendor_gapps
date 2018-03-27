@@ -26,8 +26,6 @@ PRODUCT_COPY_FILES += \
     vendor/gapps/etc/preferred-apps/google.xml:system/etc/preferred-apps/google.xml \
     vendor/gapps/etc/sysconfig/google.xml:system/etc/sysconfig/google.xml \
     vendor/gapps/etc/sysconfig/google_build.xml:system/etc/sysconfig/google_build.xml \
-    vendor/gapps/etc/sysconfig/google_vr_build.xml:system/etc/sysconfig/google_vr_build.xml \
-    vendor/gapps/etc/sysconfig/nexus.xml:system/etc/sysconfig/nexus.xml \
     vendor/gapps/etc/sysconfig/whitelist_com.android.omadm.service.xml:system/etc/sysconfig/whitelist_com.android.omadm.service.xml \
     vendor/gapps/lib/libdmjavaplugin.so:system/lib/libdmjavaplugin.so \
     vendor/gapps/lib/libprotobuf-cpp-full.so:system/lib/libprotobuf-cpp-full.so \
@@ -118,3 +116,7 @@ PRODUCT_COPY_FILES += \
     vendor/gapps/usr/srec/en-US/voice_actions_compiler.config:system/usr/srec/en-US/voice_actions_compiler.config \
     vendor/gapps/usr/srec/en-US/word_confidence_classifier:system/usr/srec/en-US/word_confidence_classifier \
     vendor/gapps/usr/srec/en-US/wordlist.syms:system/usr/srec/en-US/wordlist.syms
+
+PRODUCT_COPY_FILES_OVERRIDES := \
+    vendor/gapps/priv-app/CarrierConfig/CarrierConfig.apk:system/priv-app/CarrierConfig/CarrierConfig.apk
+
