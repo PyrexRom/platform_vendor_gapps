@@ -35,15 +35,6 @@ LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := Chrome
-LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := Chrome/Chrome.apk
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := FaceLock
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := FaceLock/FaceLock.apk
@@ -174,36 +165,6 @@ LOCAL_SRC_FILES := YouTube/YouTube.apk
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := WallpapersBReel2017
-LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := WallpapersBReel2017/WallpapersBReel2017.apk
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-$(LOCAL_BUILT_MODULE): TARGET := ../lib64/libgdx.so
-$(LOCAL_BUILT_MODULE): SYMLINK := $(TARGET_OUT)/app/WallpapersBReel2017/lib/arm64/$(LOCAL_MODULE)
-$(LOCAL_BUILT_MODULE):
-	$(hide) echo "Symlink: $(SYMLINK) -> $(TARGET)"
-	$(hide) mkdir -p $(dir $@)
-	$(hide) mkdir -p $(dir $(SYMLINK))
-	$(hide) rm -rf $@
-	$(hide) rm -rf $(SYMLINK)
-	$(hide) ln -sf $(TARGET) $(SYMLINK)
-	$(hide) touch $@
-$(LOCAL_BUILT_MODULE2): TARGET := ../lib64/libwallpapers-breel-jni.so
-$(LOCAL_BUILT_MODULE2): SYMLINK := $(TARGET_OUT)/app/WallpapersBReel2017/lib/arm64/$(LOCAL_MODULE)
-$(LOCAL_BUILT_MODULE2):
-	$(hide) echo "Symlink: $(SYMLINK) -> $(TARGET)"
-	$(hide) mkdir -p $(dir $@)
-	$(hide) mkdir -p $(dir $(SYMLINK))
-	$(hide) rm -rf $@
-	$(hide) rm -rf $(SYMLINK)
-	$(hide) ln -sf $(TARGET) $(SYMLINK)
-	$(hide) touch $@
-LOCAL_POST_INSTALL_CMD := $(LOCAL_BUILT_MODULE) $(LOCAL_BUILT_MODULE2)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
