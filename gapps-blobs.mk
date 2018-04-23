@@ -115,8 +115,13 @@ PRODUCT_COPY_FILES += \
     vendor/gapps/usr/srec/en-US/voice_actions.config:system/usr/srec/en-US/voice_actions.config \
     vendor/gapps/usr/srec/en-US/voice_actions_compiler.config:system/usr/srec/en-US/voice_actions_compiler.config \
     vendor/gapps/usr/srec/en-US/word_confidence_classifier:system/usr/srec/en-US/word_confidence_classifier \
-    vendor/gapps/usr/srec/en-US/wordlist.syms:system/usr/srec/en-US/wordlist.syms
+    vendor/gapps/usr/srec/en-US/wordlist.syms:system/usr/srec/en-US/wordlist.syms \
+    vendor/gapps/fonts/GoogleSans-Regular.ttf:system/fonts/GoogleSans-Regular.ttf \
+    vendor/gapps/fonts/GoogleSans-MediumItalic.ttf:system/fonts/GoogleSans-MediumItalic.ttf \
+    vendor/gapps/fonts/GoogleSans-BoldItalic.ttf:system/fonts/GoogleSans-BoldItalic.ttf \
+    vendor/gapps/fonts/GoogleSans-Bold.ttf:system/fonts/GoogleSans-Bold.ttf \
+    vendor/gapps/fonts/GoogleSans-Italic.ttf:system/fonts/GoogleSans-Italic.ttf \
+    vendor/gapps/fonts/GoogleSans-Medium.ttf:system/fonts/GoogleSans-Medium.ttf
 
 PRODUCT_COPY_FILES_OVERRIDES := \
     vendor/gapps/priv-app/CarrierConfig/CarrierConfig.apk:system/priv-app/CarrierConfig/CarrierConfig.apk
-
