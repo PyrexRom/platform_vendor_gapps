@@ -12,9 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-#gapps blobs
-$(call inherit-product, vendor/gapps/gapps-blobs.mk)
-
 # /app
 PRODUCT_PACKAGES += \
     CalculatorGooglePrebuilt \
@@ -23,26 +20,22 @@ PRODUCT_PACKAGES += \
     FaceLock \
     GoogleCamera \
     GoogleContactsSyncAdapter \
+    GoogleDialer \
     GoogleTTS \
     talkback \
     GoogleVrCore \
     Photos \
+    PrebuiltBugle \
     PrebuiltDeskClockGoogle \
     Ornament \
     WallpaperPickerGooglePrebuilt \
     Turbo
 
-# messenger skip on tablets
-ifeq ($(filter dragon,$(TARGET_PRODUCT)),)
-PRODUCT_PACKAGES += \
-    PrebuiltBugle
-endif
-
-# /framework
 PRODUCT_PACKAGES += \
     com.google.android.camera.experimental2017 \
     com.google.android.maps \
-    com.google.android.media.effects
+    com.google.android.media.effects \
+    com.google.android.dialer.support
 
 # /priv-app
 PRODUCT_PACKAGES += \
@@ -85,6 +78,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/gapps/overlay/
 
+# Dumpstate
 #skip prop entrys on project treble devices
 ifeq ($(filter marlin sailfish walleye taimen,$(TARGET_PRODUCT)),)
 # build.prop entrys
@@ -93,14 +87,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.wallpapers_loc_request_suw=true
 endif
 
-#dialer skip on tablets
-ifeq ($(filter dragon,$(TARGET_PRODUCT)),)
-PRODUCT_PACKAGES += \
-    GoogleDialer \
-    com.google.android.dialer.support
-
 #telephony permissions
 PRODUCT_COPY_FILES_OVERRIDES += \
     vendor/gapps/etc/permissions/com.google.android.dialer.support.xml:system/etc/permissions/com.google.android.dialer.support.xml \
-    vendor/gapps/etc/sysconfig/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml
-endif
+    vendor/gapps/etc/sysconfig/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml \
+    vendor/gapps/priv-app/CarrierConfig/CarrierConfig.apk:system/priv-app/CarrierConfig/CarrierConfig.apk
+
+$(call inherit-product, vendor/gapps/gapps-blobs.mk)
