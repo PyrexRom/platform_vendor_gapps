@@ -18,4 +18,7 @@
     <string name="ui_default_package" translatable="false">com.google.android.dialer</string>
     <!-- Class name for the default main dialer activity [DO NOT TRANSLATE] -->
     <string name="dialer_default_class" translatable="false">com.google.android.dialer.extensions.GoogleDialtactsActivity</string>
+    <!-- Show enabled lte option for lte device -->
+    <bool name="config_enabled_lte" translatable="false">true</bool>
 </resources>
+
