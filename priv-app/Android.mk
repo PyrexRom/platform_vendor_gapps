@@ -13,11 +13,10 @@
 # limitations under the License.
 
 LOCAL_PATH := $(call my-dir)
-
 include $(CLEAR_VARS)
-LOCAL_MODULE := AndroidPlatformServices
+LOCAL_MODULE := AmbientSensePrebuilt
 LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := AndroidPlatformServices/AndroidPlatformServices.apk
+LOCAL_SRC_FILES := AmbientSensePrebuilt/AmbientSensePrebuilt.apk
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
@@ -97,9 +96,9 @@ LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := GoogleLoginService
+LOCAL_MODULE := AndroidMigratePrebuilt
 LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := GoogleLoginService/GoogleLoginService.apk
+LOCAL_SRC_FILES := AndroidMigratePrebuilt/AndroidMigratePrebuilt.apk
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
@@ -149,9 +148,9 @@ LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := PixelLauncher
+LOCAL_MODULE := NexusLauncherPrebuilt
 LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := PixelLauncher/PixelLauncher.apk
+LOCAL_SRC_FILES := NexusLauncherPrebuilt/NexusLauncherPrebuilt.apk
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_CLASS := APPS
 LOCAL_OVERRIDES_PACKAGES := Launcher3

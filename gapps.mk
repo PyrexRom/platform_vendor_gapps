@@ -24,7 +24,6 @@ PRODUCT_PACKAGES += \
     GoogleTTS \
     talkback \
     GoogleVrCore \
-    Photos \
     PrebuiltBugle \
     PrebuiltDeskClockGoogle \
     Ornament \
@@ -40,14 +39,12 @@ PRODUCT_PACKAGES += \
 # /priv-app
 PRODUCT_PACKAGES += \
     AmbientSensePrebuilt \
-    AndroidPlatformServices \
-    CarrierSetup \
+    AndroidMigratePrebuilt \
     ConfigUpdater \
     ConnMetrics \
     GmsCoreSetupPrebuilt \
     GoogleBackupTransport \
     GoogleFeedback \
-    GoogleLoginService \
     GoogleOneTimeInitializer \
     GooglePartnerSetup \
     GoogleServicesFramework \
