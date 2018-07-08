@@ -40,6 +40,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AmbientSensePrebuilt \
     AndroidMigratePrebuilt \
+    CarrierSetup \
     ConfigUpdater \
     ConnMetrics \
     GmsCoreSetupPrebuilt \
@@ -48,8 +49,8 @@ PRODUCT_PACKAGES += \
     GoogleOneTimeInitializer \
     GooglePartnerSetup \
     GoogleServicesFramework \
+    NexusLauncherPrebuilt \
     Phonesky \
-    PixelLauncher \
     PrebuiltGmsCorePix \
     DynamiteModulesA \
     DynamiteModulesB \
@@ -87,7 +88,7 @@ endif
 #telephony permissions
 PRODUCT_COPY_FILES_OVERRIDES += \
     vendor/gapps/etc/permissions/com.google.android.dialer.support.xml:system/etc/permissions/com.google.android.dialer.support.xml \
-    vendor/gapps/etc/sysconfig/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml \
-    vendor/gapps/priv-app/CarrierConfig/CarrierConfig.apk:system/priv-app/CarrierConfig/CarrierConfig.apk
+    vendor/gapps/priv-app/CarrierConfig/CarrierConfig.apk:system/priv-app/CarrierConfig/CarrierConfig.apk \
+    vendor/gapps/etc/sysconfig/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml
 
 $(call inherit-product, vendor/gapps/gapps-blobs.mk)
