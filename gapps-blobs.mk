@@ -13,11 +13,6 @@
 # limitations under the License.
 
 PRODUCT_COPY_FILES += \
-    vendor/gapps/etc/init/bufferhubd.rc:system/etc/init/bufferhubd.rc \
-    vendor/gapps/etc/init/performanced.rc:system/etc/init/performanced.rc \
-    vendor/gapps/etc/init/vr_hwc.rc:system/etc/init/vr_hwc.rc \
-    vendor/gapps/etc/init/virtual_touchpad.rc:system/etc/init/virtual_touchpad.rc \
-    vendor/gapps/etc/permissions/com.google.android.camera.experimental2017.xml:system/etc/permissions/com.google.android.camera.experimental2017.xml \
     vendor/gapps/etc/permissions/com.google.vr.platform.xml:system/etc/permissions/com.google.vr.platform.xml \
     vendor/gapps/etc/permissions/com.google.android.dialer.support.xml:system/etc/permissions/com.google.android.dialer.support.xml \
     vendor/gapps/etc/permissions/com.google.android.maps.xml:system/etc/permissions/com.google.android.maps.xml \
@@ -122,5 +117,3 @@ PRODUCT_COPY_FILES += \
     vendor/gapps/fonts/GoogleSans-Bold.ttf:system/fonts/GoogleSans-Bold.ttf \
     vendor/gapps/fonts/GoogleSans-Italic.ttf:system/fonts/GoogleSans-Italic.ttf \
     vendor/gapps/fonts/GoogleSans-Medium.ttf:system/fonts/GoogleSans-Medium.ttf
-
-

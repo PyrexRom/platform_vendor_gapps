@@ -31,7 +31,6 @@ PRODUCT_PACKAGES += \
     Turbo
 
 PRODUCT_PACKAGES += \
-    com.google.android.camera.experimental2017 \
     com.google.android.maps \
     com.google.android.media.effects \
     com.google.android.dialer.support
@@ -86,7 +85,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 endif
 
 #telephony permissions
-PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES_OVERRIDES += \
     vendor/gapps/etc/permissions/com.google.android.dialer.support.xml:system/etc/permissions/com.google.android.dialer.support.xml \
     vendor/gapps/priv-app/CarrierConfig/CarrierConfig.apk:system/priv-app/CarrierConfig/CarrierConfig.apk \
     vendor/gapps/etc/sysconfig/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml
