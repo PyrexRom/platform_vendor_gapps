@@ -22,13 +22,9 @@
         <permission name="android.permission.PACKAGE_USAGE_STATS"/>
     </privapp-permissions>
 
-    <privapp-permissions package="com.android.systemui">
-        <permission name="android.permission.LOCATION_HARDWARE"/>
-        <permission name="android.permission.SET_WALLPAPER_COMPONENT"/>
-    </privapp-permissions>
-
     <privapp-permissions package="com.android.vending">
         <permission name="android.permission.ALLOCATE_AGGRESSIVE"/>
+        <permission name="android.permission.BACKUP"/>
         <permission name="android.permission.BATTERY_STATS"/>
         <permission name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"/>
         <permission name="android.permission.CHANGE_DEVICE_IDLE_TEMP_WHITELIST"/>
@@ -56,6 +52,7 @@
         <permission name="android.permission.GET_APP_OPS_STATS"/>
         <permission name="android.permission.INTERACT_ACROSS_USERS"/>
         <permission name="android.permission.OVERRIDE_WIFI_CONFIG"/>
+        <permission name="android.permission.PACKET_KEEPALIVE_OFFLOAD"/>
         <permission name="android.permission.SCORE_NETWORKS"/>
         <permission name="android.permission.UPDATE_APP_OPS_STATS"/>
     </privapp-permissions>
@@ -74,6 +71,7 @@
         <permission name="android.permission.INTERACT_ACROSS_USERS"/>
         <permission name="android.permission.READ_LOGS"/>
         <permission name="android.permission.REBOOT"/>
+        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
         <permission name="android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME"/>
     </privapp-permissions>
 
@@ -101,6 +99,7 @@
 
     <privapp-permissions package="com.google.android.dialer">
         <permission name="android.permission.ALLOW_ANY_CODEC_FOR_PLAYBACK"/>
+        <permission name="android.permission.CAPTURE_AUDIO_OUTPUT"/>
         <permission name="android.permission.CONTROL_INCALL_EXPERIENCE"/>
         <permission name="android.permission.GET_ACCOUNTS_PRIVILEGED"/>
         <permission name="android.permission.INTERACT_ACROSS_USERS"/>
@@ -208,7 +207,9 @@
 
     <privapp-permissions package="com.google.android.ims">
         <permission name="android.permission.BIND_IMS_SERVICE"/>
+        <permission name="android.permission.CONNECTIVITY_USE_RESTRICTED_NETWORKS"/>
         <permission name="android.permission.MODIFY_PHONE_STATE"/>
+        <permission name="android.permission.PACKET_KEEPALIVE_OFFLOAD"/>
         <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
     </privapp-permissions>
 
@@ -317,6 +318,8 @@
     </privapp-permissions>
 
     <privapp-permissions package="com.android.systemui">
+        <permission name="android.permission.LOCATION_HARDWARE"/>
+        <permission name="android.permission.SET_WALLPAPER_COMPONENT"/>
         <permission name="android.permission.FORCE_STOP_PACKAGES"/>
         <permission name="com.android.permission.WRITE_EMBEDDED_SUBSCRIPTIONS"/>
     </privapp-permissions>
